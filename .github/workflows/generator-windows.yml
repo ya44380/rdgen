@@ -598,7 +598,7 @@ jobs:
       - name: rename rustdesk.exe to filename.exe
         run: |
           #modif OU pour Powershell
-          mv ./SignOutput/rustdesk.exe "./SignOutput/${{ env.filename }}.exe" | echo "rustdesk"
+          mv ./SignOutput/rustdesk.exe "./SignOutput/${{ env.filename }}.exe" ; echo "rustdesk"
 
       - name: rename rustdesk.msi to filename.msi
         continue-on-error: true

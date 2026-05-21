@@ -26,7 +26,7 @@ jobs:
         job:
           - {
               target: x86_64-unknown-linux-gnu,
-              os: self-hosted,
+              os: ubuntu-24.04,
               extra-build-args: "",
             }
     steps:
